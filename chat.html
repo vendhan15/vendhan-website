@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TELEGRAM</title>
+    <style>
+          .header1{
+            
+            position:fixed;
+            left:120px;
+            display: flex;
+            height: 57px;
+            background-color: rgb(242, 246, 245);
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 100;
+          
+            
+          }
+          .right-side{
+            justify-content: space-between;
+            align-items: center;
+          }
+          .header2{
+            
+            position:fixed;
+            left:120px;
+            display: flex;
+            height: 50px;
+          background-color: rgb(242, 246, 245);
+            justify-content: space-between;
+            align-items: center;
+          border:black;
+          border-width: 300;
+            top: 55px;
+            right: 0;
+            z-index: 100;
+          }
+          .header3{
+            position:fixed;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            top: 650px;
+            left:120px;
+            right:0;
+            z-index: 100;
+            border-radius: 5px;
+            border-color:black;
+          }
+          .status{
+            color:rgb(177, 175, 175);
+            display:flex;
+            flex:1;
+            width: 500px;
+            margin-top:0px ;
+            margin-bottom: 0px;
+            top:20px;
+            padding-left:0px;
+          }
+          .sidebar1{
+            position:fixed;
+            background-color: gray;
+            left:0;
+            width:60px;
+            height: 1000px;
+            top:0;
+            z-index:100;
+          }
+          .sidebar2{
+            position:fixed;
+            left:60px;
+            top:0;
+            display: flex;
+            width:60px;
+            border:2px;
+            border-color: black;
+            background-color: rgb(249, 250, 250);
+            height: 1000px;
+            z-index:100;
+          }
+          .menu-icon{
+            display: flex;
+            position:fixed;
+            width: 25px;
+            padding-left: 10px;
+          }
+          .chat-icon{
+            
+            position:fixed;
+            top: 50px;
+            width: 25px;
+            padding-left: 10px;
+          }
+          .personal-icon{
+          
+            position:fixed;
+            top: 110px;
+            width: 25px;
+            padding-left: 10px;
+          }
+          .all-chat{
+            font-size: 10px;
+            padding-top: 60px;
+            padding-left: 10px;
+          }
+          .unread-icon{
+            position:fixed;
+            top: 170px;
+            width: 30px;
+            padding-left: 10px;
+          }
+          .personal-chat{
+            font-size: 10px;
+            padding-top: 45px;
+            padding-left: 10px;
+          }
+          .unread-chat{
+            font-size: 10px;
+            padding-top: 40px;
+            padding-left: 10px;
+          }
+          .chat1{
+            padding-top: 10px;
+            padding-left: 5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+          }
+          
+          .search-icon{
+          width: 20px;
+          height:20px;
+          padding-top:4px; 
+          padding-left: 15px;
+          padding-right: 5px;
+          align-items: center;
+        }
+        .cross-icon{
+          width: 20px;
+          height:20px;
+          right:0;
+          
+        }
+        .chatbox{
+          display: flex;
+          flex:1;
+          width: 1300px; 
+          padding-left:20px;
+          height: 40px;
+          border:none;
+          
+        }
+        .attachment{
+          width: 20px;
+          height:20px;
+        }
+        .emoji{
+          width: 20px;
+          height:20px;
+        }
+        .mike{
+          width: 20px;
+          height:20px;
+        }
+        .wallpaper{
+          position:fixed ;
+          display:flex;
+          height: 1000px;
+          width: 1000px;
+        }
+        .sticker1{
+          position:absolute;
+          left: 0px;
+          top: 100px;
+          width: 200px;
+        
+      }
+      .chat{
+        position:absolute;
+        height: 50px;
+        width:50px;
+        top: 250px;
+       
+        right: 20px;
+       border-radius: 50px;
+        
+      }
+      .sticker2{
+        position:absolute;
+       width: 200px;
+          left:0px;
+          top: 350px;
+         
+      }
+      .chat2{
+        position:absolute;
+        height: 50px;
+        width:50px;
+        top: 500px;
+       right: 20px;
+       border-radius: 50px;
+      }
+      .chat-history{
+        position:absolute;
+        display:flex;
+          left: 200px;
+          top: 0px;
+          
+      }
+      .sticker3{
+        position:absolute;
+       width: 200px;
+          left:0px;
+          top: 600px;
+      }
+      .chat3{
+        position:absolute;
+        height: 50px;
+        width:50px;
+        top: 750px;
+       right: 20px;
+       border-radius: 50px;
+      }
+</style>
+    
+  </head>
+
+  <body style="
+  top: 50px;
+  height: 10000px;
+  width: 10000px;
+  ">
+  <div class="wallpaper">
+  <img class="snow" src="thumbnail/snow.jpg">
+     
+  </div>
+    <div class="sidebar1">
+      <img class="menu-icon" src="thumbnail/hamburger-menu.svg">
+      <img class="chat-icon" src="thumbnail/chat.png">
+      <p class="all-chat"> All chat</p>
+      <img class="personal-icon" src="thumbnail/personal.png">
+      <div><p class="personal-chat"> Personal</p></div>
+      <img class="unread-icon" src="thumbnail/unread.png">
+      <div><p class="unread-chat"> unread</p></div>
+    </div>
+    <div class="sidebar2" >
+      <div>
+     <div> 
+        <img class="search-icon" src="thumbnail/search.svg">
+     
+    </div>
+      <div><img class="chat1" src="thumbnail/madhu.jpg"></div>
+    </div>
+  </div>
+    <div class="header1">
+      <div class="name"> 
+        Madhu Original 🤣
+        <p class="status"> Last seen recently</p>
+      </div>
+      <div class="right-side">
+        <img class="search-icon" src="thumbnail/search.svg">
+        <img class="search-icon" src="thumbnail/call.png">
+        <img class="search-icon" src="thumbnail/profile.jpeg">
+        <img class="search-icon" src="thumbnail/dots.webp">
+      </div>
+     
+      
+    </div>
+    <div class="header2">
+      <div>
+        Pinned message
+        <p class="status">
+          RRB ALP Notification check pananum</p>
+      </div>
+        <img class="cross-icon" src="thumbnail/cross.webp">
+   
+    </div>
+
+
+    
+    <div class="chat-history">
+      <img class="chat" src="thumbnail/madhu.jpg">
+      <img class="sticker1" src="thumbnail/sticker4.webp">
+      <img class="sticker2" src="thumbnail/sticker2.webp">
+    <img class ="chat2" src="thumbnail/photograph.jpg">
+    <img class="chat3" src="thumbnail/madhu.jpg">
+    <img class="sticker3" src="thumbnail/sticker3.webp">
+
+  </div>
+
+
+    <div class="header3">
+      <div>
+        <img class="attachment" src="thumbnail/attachment.png">
+      </div>
+     <div>
+      <input class="chatbox" placeholder="Enter your text"> 
+     </div>
+     <div>
+      <img class="emoji" src="thumbnail/emoji.png">
+      <img class="mike" src="thumbnail/voice-search-icon.svg">
+     </div>
+    </div>
+    
+    
+  </body>
+</html>

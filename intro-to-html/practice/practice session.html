@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PRACTICE EXERCISES</title>
+    <style>
+      .cart-button{
+        background-color:rgb(255,216,20);
+        color:black;
+        height:30px;
+        width:105px;
+        border:none;
+        border-radius: 17px;
+        cursor: pointer;
+        margin-right:8px;
+      }
+      .now-button{
+        background-color:rgba(225, 164, 28);
+        color:black;
+        height:30px;
+        width:105px;
+        border:none;
+        border-radius: 17px;
+        cursor: pointer;
+        margin-right:8px;
+      }
+      .cart-button:hover{
+        opacity:0.7;
+      }
+      .cart-button:active{
+        opacity:0.5;
+      }
+      .now-button:hover{
+        opacity:0.7;
+      }
+      .now-button:active{
+        opacity:0.5;
+      }
+      .youtube-ahref:hover{
+        color:bisque;
+      }
+      .youtube-ahref:active{
+        color:purple;
+      }
+      .title-p{
+        font-size: 25px;
+        font-weight:bold;
+      }
+      .price-p{
+        color:rgb(8, 213, 87);
+        font-size:20px;
+        font-weight:bold;
+      }
+      .web-mail{
+        color:grey;
+      }
+      .web-url{
+        font-weight:bold;
+      }
+      .web-role{
+        font-style: arial;
+        width:500px;
+        font-size: 16px;
+        font-weight: 900px;
+      }
+      .web-rule{
+        font-style: arial;
+      }
+      .web-link{
+        color:rgb(104, 176, 239);
+      }
+      .stock-value{
+        font-weight: 1000px;
+        font-size: 30px;
+        font-style: arial;
+      }
+      .stock-curr{
+        color:rgb(74, 74, 74);
+      }
+      .stock-inc{
+        color:rgb(6, 94, 6);
+        font-size: 16px;
+        font-style: BOLD;
+        font-weight: normal;
+      }
+      .stock-predict{
+        color:rgb(74, 74, 74);
+        width:50px;
+        
+      }
+      .stock-actual{
+        color:rgb(168, 7, 7);
+      }
+      .search-engine{
+        margin-left: 200px;
+      }
+      .search-bar{
+        width:480px;
+        height:400px;
+        margin-left: 50px;
+        border-radius: 100px;
+        padding-left:10px;
+        border:none;
+        border-color: grey;
+        transition: box-shadow 0.15s;
+       
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+      }
+      .search-bar:hover{
+        
+        color:rgb(106, 101, 101);
+      
+      }
+      .searchbar-mail{
+        height:25px;
+        width:370px;
+        border-width: 1.7px;
+        border-radius: 4px;
+      }
+      .signin-button{
+        background-color: rgb(21, 21, 182);
+        color:white;
+        font-size: 15px;
+        width: 370px;
+        height: 45px;
+        border-radius:30px;
+        display:block;
+        
+      }
+      .survey-check{
+        width:195px;
+        font-size: 15px;
+        font-weight:1000px;
+      }
+      .button-1{
+        display:incline-block;
+      }
+      .button-2
+        {
+          display:incline-block;
+          margin-bottom: 50px;
+        }
+        .search-engine,
+        .search-bar{
+          display:block;
+        }
+        .search-bar{
+          width:480px;
+          height: 30px;
+        }
+      .signup-name1{
+        display:block;
+
+      }
+      .signup-name2,
+      .signup-name1{
+        display:inline-block;
+        margin-bottom: 20px;
+        height:30px;
+          border-radius: 4px;
+          border-width: 0.5px;
+          border-color:rgb(108, 108, 108);
+          padding-left: 15px;
+        
+      }
+       
+        .signup-mail{
+          display:block;
+          margin-bottom: 20px;
+          width: 250px;
+          height:30px;
+          border-radius: 4px;
+          border-width: 0.5px;
+          border-color:rgb(108, 108, 108);
+          padding-left: 15px;
+        }
+        .signup-button{
+          width:250px;
+          height:50px;
+          background-color: rgb(35, 35, 244);
+          color:white;
+          border-radius:10px;
+          border:none;
+          font-size: medium;
+          font-weight: bold;
+          text-align: center;
+        }
+        .signup-button:active{
+          background-color: white;
+          color: rgb(35, 35, 244);
+          transition:0.5s;
+        }
+        .signup-button:hover{
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+         
+        }
+        .facebook-request{
+          width:120px;
+          height:130px;
+        }
+        .request-1{
+          border-color: rgb(74, 74, 74);
+          margin-left:5px;
+          margin-top: 30px;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+          transition:box-shadow 0.15s;
+          width: 120px;
+          padding-left: 2px;
+       
+          margin-bottom: 50px;
+        }
+        .friend-1{
+          font-weight: bold;
+          font-style:arial;
+          margin-bottom:0px;
+          padding-left: 2px;
+          
+        }
+        .mutual-friends{
+          font-size: 13px;
+          color:rgb(74, 74, 74);
+          margin-top:2px;
+          margin-bottom:1px;
+          padding-left: 2px;
+          vertical-align: top;
+        }
+        .click-button1{
+          background-color: rgb(68, 98, 234);
+          border:none;
+          color:white;
+          width:100px;
+          height:30px;
+          border-radius: 5px;
+          margin-top: 5px;
+          font-weight: bold;
+          font-style:arial;
+          padding-left: 2px;
+          cursor:pointer;
+        }
+        .click-button1:active{
+          background-color: white;
+          color:rgb(68, 98, 234);
+        }
+        .google-pro{
+          display:block;
+        }
+        .option-1{
+          height: 40px;
+          margin-left: 150px;
+          margin-top:30px;
+          border:none;
+          font-weight: bold;
+          font-style:arial;
+          margin-right:5px;
+          width: 130px;
+        }
+        .option-2{
+          height: 40px;
+          width:150px;
+          margin-top:30px;
+          border:none;
+          font-weight: bold;
+          font-style:arial;
+          margin-left:5px;
+          
+        }
+        .person-req{
+          width:60px;
+        display:inline-block;
+        margin-right:15px;
+        vertical-align: top;
+        border-radius: 60px;
+        height:60px;
+        padding-left: 5px;
+        margin-bottom:20px;
+        }
+        .request-row, .details-req{
+          display:inline-block;
+          vertical-align: top;
+        }
+        .follow-button{
+          display:inline-block;
+          margin-left: 70px;
+        }
+        .req-name{
+          font-weight: bold;
+          font-style:robotic;
+          font-size: 12px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          display:inline-block;
+          padding-left: 2px;
+        }
+        .req-type{
+          font-size:  12px;
+          color:rgb(96, 96, 96);
+          margin-top: 2px;
+          margin-bottom: 1px;
+        }
+        .req-status{
+          font-size: 12px;
+          color:rgb(96, 96, 96);
+          margin-top: 1px;
+          margin-bottom: 10px;
+          }
+          .request-notifi{
+            border:none;
+            border-color: rgb(96, 96, 96);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+          transition:box-shadow 0.15s;
+          width: 320px;
+          }
+          .follow-button{
+            vertical-align: end;
+            margin-top: 7px;
+            margin-bottom:7px;
+          }
+          .video-preview{
+            display: inline-block;
+          }
+          .thumbnail{
+            width: 300px;
+            margin-bottom: 0px;
+          }
+          .channel-owner{
+            width:30px;
+            border-radius:50px;
+            display:inline-block;
+          }
+          .video-topic{
+            font-size: 16px;
+            margin-top: 0px;
+            width: 280px;
+            font-weight: bold;
+          }
+          .video-creater{
+            font-size: 14px;
+            margin-bottom: 10px;
+            color:rgb(96, 96, 96);
+          }
+          
+          .video-record{
+            font-size: 11px;
+            margin-top: 0px;
+            color:rgb(96, 96, 96);
+          }
+          .video-info,.channel-owner{
+            display:inline-block;
+            margin-top: 5px;
+            margin-left: 5px;
+            
+          }
+          
+          .video-preview,.video-preview2{
+            border:none;
+            width: 660px;
+            margin-bottom: 5px;
+            display:block;
+
+            
+          }
+            .thumbnail-row {
+              display:inline-block;
+
+            }
+        .channel-status{
+          display:inline-block;
+          vertical-align: top;
+          margin-top: 10px;
+        }
+        
+        .image-add1{
+          width: 20px;
+          border-radius: 500px;
+          height: 20px;
+        }
+        .horizontal-align1{
+          display:inline-block;
+        }
+        .mutual-friends{
+          display:inline-block;
+        }
+        
+        .grid-view{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          column-gap: 10px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <a href="https://www.amazon.in/?tag=msndeskabkin-21&ref=pd_sl_7qhce485bd_e&adgrpid=1322714095756137&hvadid=82669889959645&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=149612&hvtargid=kwd-82670512756912:loc-90&hydadcr=14453_2154374" target="_blank"  href class="youtube-ahref"> 
+      Back to Amazon
+     </a>
+     <p class="title-p">
+         Nike Black Running Shoes
+     </p>
+     <p class="price-p">
+       $39 - in stock.
+     </p>
+     <p>
+       Free delivery tomorrow.
+     </p>
+     
+     
+     
+     <button class=" cart-button">
+       Add to Cart
+     </button>
+     <button class="now-button">
+     Buy now
+     </button>
+     <p>
+       <span class="web-url">freeCodeCamp.org</span>
+       <span class="web-mail"> @freeCodeCamp 1h</span>
+     </p>
+     <p class="web-role">
+       As a Web developer, you'll want to make your projects easy to use and navigate around.
+     </p>
+     <p class="web-rule">
+       Here <span class="web-link">@chp_it</span> outlines the top skills new developers should have.
+     </p>
+     <p>
+      <span class="stock-value">1,049.61 </span> <span class="stock-curr">USD</span>
+     </p>
+     <p class="stock-inc">
+       +18.05 (1.75%) today
+     </p>
+     <p>
+       <span class="stock-predict">After hours 1,048.00</span>
+       <span class="stock-actual">-1.61(0.15%)</span>
+     </p>
+     <div class="google-pro">
+     <img  class="search-engine" src="google.png">
+     <input class="search-bar" type="text" placeholder="Search Google or type a URL">
+     <button class="option-1">
+      Google Search
+     </button>
+     <button class="option-2">
+      I'm Feeling Lucky
+     </button>
+    </div>
+     <p>
+      Email
+     </p>
+     <input class="searchbar-mail" type="text">
+     <p class="terms-condi">
+      By clicking Agree & Join, you agree to the Privacy Policy.
+     </p>
+     <button class="signin-button">
+      Agree & Join
+     </button>
+     <p class="survey-check">
+      Thanks for chatting with our customer support. Would you like to take our survey?
+     </p>
+     <button class="button-1">
+      Yes
+     </button>
+     <button class="button-2">
+      No
+     </button>
+    </br>
+    
+     <input class="signup-name1" placeholder="First name">
+    
+     
+     <input class="signup-name2" placeholder="Last name">
+     <input class="signup-mail" placeholder="Email">
+     <button class="signup-button">
+      Sign Up
+     </button>
+     <br>
+
+     <div class="grid-view">
+      <div class="request-1">
+        <img class="facebook-request" src="photo.webp.jpg">
+        <p class="friend-1">
+          Rajini
+        </p>
+        
+        <div class="horizontal-align1">
+        <img class="image-add1"  src="photo4.webp.jpg">
+      </div>
+     
+        <p class="mutual-friends">
+          2 mutual friends
+        </p>
+     
+        <button class="click-button1">
+          Add Friend
+        </button>
+       </div>
+       <div class="request-1">
+        <img class="facebook-request" src="photo1.webp.jpg">
+        <p class="friend-1">
+          Ajith
+        </p>
+        <div class="horizontal-align1">
+          <img class="image-add1"  src="photo2.webp.jpg">
+        </div>
+        <p class="mutual-friends">
+          4 mutual friends
+        </p>
+        <button class="click-button1">
+          Add Friend
+        </button>
+       </div>
+       <div class="request-1">
+        <img class="facebook-request" src="photo2.webp.jpg">
+        <p class="friend-1">
+          Kamal
+        </p>
+        <div class="horizontal-align1">
+          <img class="image-add1"  src="photo5.webp.jpg">
+        </div>
+        <p class="mutual-friends">
+          5 mutual friends
+        </p>
+        <button class="click-button1">
+          Add Friend
+        </button>
+       </div>
+       <div class="request-1">
+        <img class="facebook-request" src="photo4.webp.jpg">
+        <p class="friend-1">
+          Sivaji
+        </p>
+        <div class="horizontal-align1">
+          <img class="image-add1"  src="photo1.webp.jpg">
+        </div>
+        <p class="mutual-friends">
+          9 mutual friends
+        </p>
+        <button class="click-button1">
+          Add Friend
+        </button>
+       </div>
+     </div>
+     
+     <br/>
+     <div class="request-notifi">
+     <div class="request-row">
+      <img class="person-req" src="photo4.webp.jpg">
+     </div>
+     <div class="details-req">
+      <p class="req-name">
+        Oliver
+      </p>
+      <p class="req-type">
+        the cat
+      </p>
+      <P class="req-status">
+        popular
+      </P>
+      
+     </div>
+     <div class="follow-button">
+      <button class="click-button1">
+        Follow
+      </button>
+     </div>
+     
+
+     
+      <div class="request-row">
+       <img class="person-req" src="photo2.webp.jpg">
+      </div>
+      <div class="details-req">
+       <p class="req-name">
+         Titans
+       </p>
+       <p class="req-type">
+         Eren
+       </p>
+       <P class="req-status">
+         popular
+       </P>
+       
+      </div>
+      <div class="follow-button">
+       <button class="click-button1">
+         Follow
+       </button>
+      </div>
+      
+
+      
+        <div class="request-row">
+         <img class="person-req" src="photo3.webp.jpg">
+        </div>
+        <div class="details-req">
+         <p class="req-name">
+           Shanks
+         </p>
+         <p class="req-type">
+           pirate
+         </p>
+         <P class="req-status">
+           popular
+         </P>
+         
+        </div>
+        <div class="follow-button">
+         <button class="click-button1">
+           Follow
+         </button>
+        </div>
+        </div>
+        
+          
+      </br>
+        <div class="video-scroll">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img  class="thumbnail" src="thumbnail 5.webp">
+            
+          </div>
+          <div class="channel-status">
+            
+            <div class="owner-info">
+            <div class="video-info">
+              <p class="video-topic">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-creater">
+                Marques Brownlee
+              </p>
+              <p class="video-record">
+                3.4M views &#183; 6 months ago
+              </p>
+            </div>      
+          </div>
+          </div>
+          </div>
+
+
+
+          <div class="video-preview2">
+            <div class="thumbnail-row">
+              <img  class="thumbnail" src="thumbnail2.webp">
+              
+            </div>
+            <div class="channel-status">
+              
+              <div class="owner-info">
+              <div class="video-info">
+                <p class="video-topic">
+                  Anirudh's Rocking Performance of Hukum | Jailer Audio Launch
+                </p>
+                <p class="video-creater">
+                  Sun TV
+                </p>
+                <p class="video-record">
+                  2.4M views &#183; 3 days ago
+                </p>
+              </div>      
+            </div>
+            </div>
+            </div>
+
+
+            <div class="video-preview2">
+              <div class="thumbnail-row">
+                <img  class="thumbnail" src="thumbnail 4.jpg">
+                
+              </div>
+              <div class="channel-status">
+                
+                <div class="owner-info">
+                <div class="video-info">
+                  <p class="video-topic">
+                    Arima Arima Official Video Song | Enthiran | Rajinikanth | Aishwarya Rai | A.R.Rahman
+                  </p>
+                  <p class="video-creater">
+                    Think Music India
+                  </p>
+                  <p class="video-record">
+                    10M views &#183; 8 years ago
+                  </p>
+                </div>      
+              </div>
+              </div>
+              </div>
+              </div>
+              <div style="display:inline-block">
+                div 1
+                
+              </div>
+              <div  style="display:inline-block">
+                div2
+              </div>
+         
+  </body>
+</html>

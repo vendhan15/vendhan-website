@@ -1,0 +1,162 @@
+
+.thumbnail {
+  width:100%;
+  cursor:pointer;
+ }
+.video-topic{
+
+  margin-top:0px;
+  margin-bottom:10px;
+  font-size:14px;
+  font-weight:500;
+  line-height: 20px;
+  width:250px;
+  font-style: arial;
+  cursor:pointer;
+}
+.video-creater{
+  color:rgb(96, 96, 96);
+  font-size:13.5px;
+  margin-bottom: 4px;
+  cursor:pointer;
+}
+.video-record{
+  color:rgb(96, 96, 96);
+  font-size:13px;
+  margin-top: 0px;
+  
+}
+
+.display-view{
+ 
+  display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr ;
+width: fit-content;
+}
+ 
+
+.video-info-grid{
+  display:grid;
+  grid-template-columns: 50px 1fr 1fr;
+}
+
+.channel-picture{
+  display:inline-block;
+  width: 50px;
+  vertical-align: top;
+  margin-top: 0px;
+  position:relative;
+  
+
+  
+  
+}
+.video-info{
+  display:inline-block;
+
+  
+}
+.channel-owner{
+  width: 36px;
+  border-radius: 50px;
+  position:relative;
+ 
+}
+
+.thumbnail-row{
+  margin-bottom:8px;
+  position:relative;
+  .video-time{
+    position:absolute;
+    background-color: black;
+    padding-left: 4px;
+    color:white;
+    bottom:10px;
+    right: 8px;
+    font-family: roboto, arial;
+    font-size: 12px;
+    font-weight:500;
+    padding: 4px;
+   
+  }
+}
+.video-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 40px;
+  text-decoration:underline;
+}
+
+@media  (max-width: 500px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+@media (min-width: 751px) and (max-width:999px){
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+@media  (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+  }
+}
+
+.video-info-grid1{
+  position: absolute;
+  display:grid;
+  width:fit-content;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top:5px;
+  padding-bottom:5px;
+  grid-template-columns: 50px 1fr;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+
+
+pointer-events:none;
+white-space: nowrap;
+}
+
+.channel-picture1{
+  display:inline-block;
+  width: 50px;
+  vertical-align: top;
+  margin-top: 0px;
+  
+  
+}
+.video-info1{
+  display:inline-block;
+
+  
+}
+.channel-owner1{
+  width: 36px;
+  border-radius: 50px;
+  position:relative;
+}
+
+
+.channel-picture .video-info-grid1{
+  position:absolute;
+ 
+  transition: 0.15s;
+  background-color:white;
+  justify-content: center;
+  align-items: center;
+ 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.channel-picture:hover .video-info-grid1{
+  opacity:1;
+
+}
+.video-topic1,.video-creater1  {
+  font-family: roboto arial;
+}
